@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en" class="nojs">
 <head>
   <title>Lab 2</title>
@@ -9,26 +9,32 @@
 </head>
 <body>
   <div class="container">
-    <form id="contact" action="" method="post">
+    <form id="contact" action="" method="post" autocomplete="on">
       <label for="email">Email:</label>
       <input type="email"
 	         id="email" 
-			 name="email" required />
+			 name="email" 
+			 autocomplete="email" 
+			 required />
       
       <label for="phone">Phone Number:</label>
       <input type="tel"
 	         id="phone" 
 			 name="phone" 
-			 pattern="[0-9]{10}" placeholder="1234567890" required />
+			 pattern="[0-9]{10}" 
+			 placeholder="1234567890" 
+			 autocomplete="tel" 
+			 required />
       
       <label for="dob">Date of Birth:</label>
       <input type="date" 
 	         id="dob" 
-			 name="dob" required />
+			 name="dob" 
+			 autocomplete="bday" 
+			 required />
       
       <button type="submit">Submit</button>
     </form>
   </div>
 </body>
 </html>
-
